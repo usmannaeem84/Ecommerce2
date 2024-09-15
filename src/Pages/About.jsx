@@ -20,7 +20,7 @@ const About = () => {
         <img className='w-full sm:w-[90%] h-auto' src={assets.about_img} alt="" />
         </div>
 
-        <div className="right flex flex-col w-full sm:w-[65%] items-start gap-8 text-2xl text-gray-500 text-start">
+        <div className="right flex flex-col w-full sm:w-[65%] items-start gap-8 sm:text-2xl  text-gray-500 text-start">
           <p>Forever was born out of a passion for innovation and a desire to revolutionize the way people shop online. Our journey began with a simple idea: to provide a platform where customers can easily discover, explore, and purchase a wide range of products from the comfort of their homes.</p>
           <p>Since our inception, we've worked tirelessly to curate a diverse selection of high-quality products that cater to every taste and preference. From fashion and beauty to electronics and home essentials, we offer an extensive collection sourced from trusted brands and suppliers.</p>
           <p className='font-semibold'>Misson</p>

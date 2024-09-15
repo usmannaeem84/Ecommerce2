@@ -126,7 +126,7 @@ if(showSearch && search){
       </div>
       <div className="right flex flex-col ">
 
-        <div className='flex justify-between mb-5 '>
+        <div className='flex justify-between sm:flex-row sm:gap-0 gap-4 flex-col mb-5 '>
 
           <div className="latestText flex gap-2 items-center">
             <p className='text-xl sm:text-3xl font-medium text-gray-500'>ALL</p>
@@ -134,7 +134,7 @@ if(showSearch && search){
             <p className='w-9 sm:w-11 h-[2px] bg-black'></p>
           </div>
           <div className="sort">
-            <select onChange={(e) => setSortType(e.target.value)} className='p-2 dm:p-3 ' name="" id="">
+            <select onChange={(e) => setSortType(e.target.value)} className='p-2 sm:p-3 ' name="" id="">
               <option className='text-xs sm:text-sm' value="relavent">Sort by : Relavent</option>
               <option className='text-xs sm:text-sm' value="low-high">Sort by : Low to high</option>
               <option className='text-xs sm:text-sm' value="high-low">Sort by : High to low</option>
@@ -144,8 +144,8 @@ if(showSearch && search){
 
         <div className="w-full  grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-7">
           {
-            filterProd.map((product) => (
-              <ProductItem key={product._id} product={product} />
+            filterProd.map((product,index) => (
+              <ProductItem key={index} product={product} />
             ))
           }
         </div>
