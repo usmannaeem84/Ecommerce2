@@ -45,7 +45,7 @@ if (cart[itemId]) {
 toast.success(
     <div>
       Item added to cart.{" "}
-      <NavLink className="text-green-600 border-b-[1px] border-green-600" to="/cart">
+      <NavLink onClick={()=>scrollTo(0,0)} className="text-green-600 border-b-[1px] border-green-600" to="/cart">
         Go to cart
       </NavLink>
     </div>
