@@ -89,7 +89,7 @@ if(showSearch && search){
   }
 
   return (
-    <div className='my-10 flex gap-12 flex-col sm:flex-row '>
+    <div className='my-5 flex gap-12 flex-col sm:flex-row '>
 
 
       <div className="left  flex flex-col ">
@@ -105,7 +105,7 @@ if(showSearch && search){
 
         </div>
 
-        <div className={`Category w-full sm:w-44  flex flex-col border border-gray-300 my-3 p-5 ${visible ? "" : "hidden"} sm:block border-gray-300`}>
+        <div className={`Category w-full sm:w-44  flex flex-col border border-gray-300 my-2 p-5 ${visible ? "" : "hidden"} sm:block border-gray-300`}>
           <p className='text-sm'>CATEGORIES</p>
           <div className="option flex flex-col gap-3 mt-3">
             <p className='flex gap-2 text-sm'><input onChange={toggleCategory} type="checkbox" name="" id="" value={'Men'} />Men</p>

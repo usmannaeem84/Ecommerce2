@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
       <div  className='footer flex flex-col gap-3 sm:gap-0 sm:flex-row justify-between items-center'>
 
       <div className="Flogo flex w-full sm:w-[40%]  flex-col justify-between gap-2 ">
-        <img className='cursor-pointer w-32' src={assets.logo} alt="" />
+      <NavLink onClick={()=>scrollTo(0,0)} to="/" >  <img className='cursor-pointer w-32' src={assets.logo} alt="" /></NavLink>
         <p className='text-gray-500 text-sm'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
       </div>
       <div className="Fdetails w-full sm:w-[60%] flex justify-around flex-col sm:flex-row ">

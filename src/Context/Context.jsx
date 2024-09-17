@@ -2,6 +2,7 @@ import React, { createContext,useEffect,useState } from "react";
 import { products } from "../assets/assets";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 export const ProductContext = createContext();
@@ -41,10 +42,16 @@ if (cart[itemId]) {
 
 
 
-toast.success("Item Added To Cart")
-setCartItems(cart)
-
-}
+toast.success(
+    <div>
+      Item added to cart.{" "}
+      <NavLink className="text-green-600 border-b-[1px] border-green-600" to="/cart">
+        Go to cart
+      </NavLink>
+    </div>
+  );
+  setCartItems(cart);
+};
 
 function getTotalCart(){
 

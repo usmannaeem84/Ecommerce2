@@ -10,7 +10,7 @@ const {setShowSearch,getTotalCart} = useContext(ProductContext)
 
     return (
         <div className='flex items-center justify-between py-5 font-medium' >
-            <img src={assets.logo} alt="" className='w-36' />
+          <NavLink to="/" > <img src={assets.logo} alt="" className='w-36' /></NavLink>
 
             <ul className='  flex items-center justify-center gap-7 hidden sm:flex text-gray-700 ' >
                 <NavLink to="/" className="flex flex-col items-center gap-1 " >
@@ -59,7 +59,7 @@ const {setShowSearch,getTotalCart} = useContext(ProductContext)
 
 {/* creating navbar for small screen  */}
 
-<div className={`flex flex-col absolute top-0 bottom-0  right-0 overflow-hidden transition-all bg-slate-100 ${ visible ? "w-full" : "w-0" }  `} >
+<div className={`flex flex-col absolute top-0 bottom-0 h-screen  right-0 overflow-hidden transition-all bg-slate-100 ${ visible ? "w-full" : "w-0" }  `} >
 
 <div onClick={()=>setVisible(false)} className='flex gap-3 cursor-pointer items-center p-4' >
 <img  className='rotate-180 h-4' src={assets.dropdown_icon} alt="" />
