@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="Fmenu  flex flex-col gap-1">
             <h1 className='text-xl mb-3'>GET IN TOUCH</h1>
             <p className='text-sm text-gray-500'>+1-000-000-0000</p>
-            <p className='text-sm text-gray-500'>usman.naeem12257@gmail.com</p>
+            <p className='text-sm text-gray-500'>arhum.javaid@gmail.com</p>
             <p className='text-sm text-gray-500'>LinkedIn</p>
     
         </div>
@@ -33,7 +33,7 @@ const Footer = () => {
 
       </div>
       < hr className='bg-gray-300 h-[1.1px] w-full my-8'/ >
-    <p className='text-gray-500 mb-5'> Copyright 2024@ Usman - All Right Reserved.</p>
+    <p className='text-gray-500 mb-5'> Copyright 2024@ Arhum - All Right Reserved.</p>
     </div>
   )
 }
